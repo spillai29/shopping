@@ -87,6 +87,8 @@ public class GreetingController {
 	     //sql="Insert into usermgmtms.users (UserId,UserName,Password) values('sgp','suresh','password')";
 	     stmt.executeUpdate(sql);
 	     System.out.println("Got insert)");
+	     
+	     System.out.println("Jenkins Test+1)");
 	     con.close();
 	     return new TelePack(provider+" "+packname,"Donation Success "+" Balance pack= "+returnCount(packname, provider)
 	         		
@@ -114,6 +116,8 @@ private int returnCount(String packname,String provider)
 {
 	
 	System.out.println("In return count");
+	
+	System.out.println("Testing Junk  count");
 	try{
 	Connection con= ShopingDBCon.dbCon();
 	 int mycount=0;
@@ -125,7 +129,7 @@ private int returnCount(String packname,String provider)
     ResultSet rs=stmt.executeQuery(sql);
     System.out.println("After query)");
     
-   	 
+   	  
     
     
     while(rs!= null && rs.next())
