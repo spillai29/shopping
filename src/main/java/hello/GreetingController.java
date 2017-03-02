@@ -115,9 +115,9 @@ private int returnCount(String packname,String provider)
 
 {
 	
-	System.out.println("In return count");
+	System.out.println("In return count+2");
 	
-	System.out.println("Testing suresh Jenkins");
+	System.out.println("Testing second time");
 	try{
 	Connection con= ShopingDBCon.dbCon();
 	 int mycount=0;
